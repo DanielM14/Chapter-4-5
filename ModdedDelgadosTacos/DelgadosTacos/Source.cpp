@@ -3,8 +3,23 @@
 //Author Daniel McGlasson
 
 #include <iostream>
-#include <String>
-
+#include <string>
+void printMenu()
+{
+	std::cout << "**********************************" << std::endl;
+	std::cout << "               MENU               " << std::endl;
+	std::cout << "Tacos                         0.99" << std::endl;
+	std::cout << "Burrtios                      1.99" << std::endl;
+	std::cout << "Enchiladas                    1.99" << std::endl;
+	std::cout << "Tostadas                      1.50" << std::endl;
+	std::cout << "Drink                         0.99" << std::endl;
+	std::cout << "Churro                        1.25" << std::endl;
+	std::cout << "Sumpreme Burrtio              4.50" << std::endl;
+	std::cout << "Potatos Oles                  1.99" << std::endl;
+	std::cout << "Quesadilla                    1.00" << std::endl;
+	std::cout << "Faijta                        3.00" << std::endl;
+	std::cout << "**********************************"
+}
 
 int main()
 {
@@ -18,10 +33,11 @@ int main()
 	double potatosOles = 1.99;
 	double quesadilla = 1.00;
 	double faijta = 3.00;
-	double tacosOrdered, burritoOrdered, enchiladasOrdered, tostadasOrdered, drinkOrdered, churroOrdered, sumpremeBurrtioOrdered, potatoOlesOrdered, quesadillaOrdered, faijtaOrdered;
+	double taxRate = 0.7;
+	double tacosNumber = 0, burritoNumber = 0, enchiladasNumber = 0, tostadasNumber = 0 , drinkNumber = 0, churroNumber = 0, sumpremeBurrtioNumber = 0, potatoOlesNumber = 0, quesadillaNumber = 0, faijtaNumber = 0;
 	double total;
+	std::string userChoice;
 	
-
 	std::cout << "************Welcome to Delgados Tacos***************\n\n\n\n\n\n" << std::endl;
 	std::cout << " _____________________________________________ " << std::endl;
 	std::cout << " |                                           | " << std::endl;
@@ -36,43 +52,54 @@ int main()
 	std::cout << " |                                                      | " << std::endl;
 	std::cout << " |                                                      | " << std::endl;
 	std::cout << " -------({ $ })---------------------------({ $ })-------- " << std::endl;
+	printMenu();
+	do{
+		std::cout << "Welcome to Delgados Tacos what item(s) woudld you like? >>>" << std::endl;
+		std::cin >> userChoice;
 
-
-	std::cout << "How many tacos would you like? >>> " << std::endl;
-	std::cin >> tacosOrdered;
-
-	std::cout << "How many burrtios would you like? >>> " << std::endl;
-	std::cin >> burritoOrdered;
+		if (userChoice == "tacos" || userChoice == "Tacos")
+		{
+			std::cout << "How many tacos do you want? " << std::endl;
+			std::cin >> tacosNumber;
+		}
+		else if (userChoice == "burritos" || userChoice == "Burritos")
+		{
+			std::cout << "How many burritos do you want?" << std::endl;
+			std::cin >> burritoNumber;
+		}
+		else if (userChoice == "enchiladas" || userChoice == "Enchiladas")
+		{
+			std::cout << "How many echiladas do you want?" << std::endl;
+			std::cin >> enchiladasNumber;
+		}
+		else if (userChoice == "tostadas" || userChoice == "Tostadas")
+		{
+			std::cout << "How many tostadas would you like" << std::endl;
+			std::cin >> tostadasNumber;
+		}
+		else if (userChoice == "drink" || userChoice == "Drink")
+		{
+			std::cout << "How many drink's would you like?" << std::endl;
+			std::cin >> drinkNumber;
+		}
+		else if (userChoice == "churro" || userChoice == "Churro")
+		{
+			std::cout << "How many churro's do you want?" << std::endl;
+			std::cin >> churroNumber;
+		}
+		else if (userChoice == "sumpreme burrtio" || userChoice == "Sumpreme Burrtio")
+		{
+			std::cout << "How many sumpreme burrtios do you want?" << std::endl;
+			std::cin >> sumpremeBurrtioNumber;
+		}
+	}
+		
+		
 	
-	std::cout << "How many enchiladas would you like? >>> " << std::endl;
-	std::cin >> enchiladasOrdered;
 
-	std::cout << "How many tostadas would you like? >>> " << std::endl;
-	std::cin >> tostadasOrdered;
-
-	std::cout << "How many drinks would you like? >>> " << std::endl;
-	std::cin >> drinkOrdered;
-
-	std::cout << "How many churros would you like? >>> " << std::endl;
-	std::cin >> churroOrdered;
-
-	std::cout << "How many Sumpreme Burritos would you like? >>> " << std::endl;
-    std::cin >> sumpremeBurrtioOrdered;
-
-	std::cout << "How many Potatos Oles would you like? >>> " << std::endl;
-	std::cin >> potatoOlesOrdered;
-
-	std::cout << "How many Quesadilla would you like? >>> " << std::endl;
-	std::cin >> quesadillaOrdered;
-
-	std::cout << "How many Faijtas would you like? >>> " << std::endl;
-	std::cin >> faijtaOrdered;
+	
 
 
-	total = (tacos * tacosOrdered) + (burrtios*burritoOrdered) + (enchiladas*enchiladasOrdered) + (tostadas*tostadasOrdered) + (drink*drinkOrdered) + (churro*churroOrdered) + (sumpremeBurrtio*sumpremeBurrtioOrdered) + (potatosOles*potatoOlesOrdered) + (quesadilla*quesadillaOrdered) + (faijta*faijtaOrdered);
-	std::cout << "Your Total is >>> " << total;
 
-		system("pause");
-		return 0;
 		
 }
