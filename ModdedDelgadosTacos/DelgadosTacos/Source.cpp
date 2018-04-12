@@ -107,15 +107,13 @@ int main()
 			std::cout << "How many fajitas would you like?" << std::endl;
 			std::cin >> faijtaNumber;
 		}
-	}
+	} 
+
 	
+	system("pause");
+	return 0;
 		
-		
 	
-
-	
-
-
 
 		
 }
