@@ -92,7 +92,21 @@ int main()
 			std::cout << "How many sumpreme burrtios do you want?" << std::endl;
 			std::cin >> sumpremeBurrtioNumber;
 		}
-		else if (userChoice == )
+		else if (userChoice == "potato oles" || userChoice == "Potato Oles")
+		{
+			std::cout << "How many potato oles would you like?" << std::endl;
+			std::cin >> potatoOlesNumber;
+		}
+		else if (userChoice == "quesodilla" || userChoice == "Quesodilla")
+		{
+			std::cout << "How many quesodillas would you like?" << std::endl;
+			std::cin >> quesadillaNumber;
+		}
+		else if (userChoice == "fajita" || userChoice == "Fajita")
+		{
+			std::cout << "How many fajitas would you like?" << std::endl;
+			std::cin >> faijtaNumber;
+		}
 	}
 		
 		
