@@ -64,61 +64,61 @@ int main()
 		{
 			std::cout << "How many tacos do you want? " << std::endl;
 			std::cin >> tacosNumber;
-			total = tacos;
+			total = tacos*tacosNumber;
 		}
 		else if (userChoice == "burritos" || userChoice == "Burritos")
 		{
 			std::cout << "How many burritos do you want?" << std::endl;
 			std::cin >> burritoNumber;
-			total = burritos;
+			total = burritos*burritoNumber;
 		}
 		else if (userChoice == "enchiladas" || userChoice == "Enchiladas")
 		{
 			std::cout << "How many echiladas do you want?" << std::endl;
 			std::cin >> enchiladasNumber;
-			total = enchiladas;
+			total = enchiladas*enchiladasNumber;
 		}
 		else if (userChoice == "tostadas" || userChoice == "Tostadas")
 		{
 			std::cout << "How many tostadas would you like" << std::endl;
 			std::cin >> tostadasNumber;
-			total = tostadas;
+			total = tostadas*tostadasNumber;
 		}
 		else if (userChoice == "drink" || userChoice == "Drink")
 		{
 			std::cout << "How many drink's would you like?" << std::endl;
 			std::cin >> drinkNumber;
-			total = drink;
+			total = drink*drinkNumber;
 		}
 		else if (userChoice == "churro" || userChoice == "Churro")
 		{
 			std::cout << "How many churro's do you want?" << std::endl;
 			std::cin >> churroNumber;
-			total = churro;
+			total = churro*churroNumber;
 		}
 		else if (userChoice == "sumpreme burrtio" || userChoice == "Sumpreme Burrtio")
 		{
 			std::cout << "How many sumpreme burrtios do you want?" << std::endl;
 			std::cin >> sumpremeBurrtioNumber;
-			total = sumpremeBurrtio;
+			total = sumpremeBurrtio*sumpremeBurrtioNumber;
 		}
 		else if (userChoice == "potato oles" || userChoice == "Potato Oles")
 		{
 			std::cout << "How many potato oles would you like?" << std::endl;
 			std::cin >> potatoOlesNumber;
-			total = potatosOles;
+			total = potatosOles*potatoOlesNumber;
 		}
 		else if (userChoice == "quesodilla" || userChoice == "Quesodilla")
 		{
 			std::cout << "How many quesodillas would you like?" << std::endl;
 			std::cin >> quesadillaNumber;
-			total = quesadilla;
+			total = quesadilla*quesadillaNumber;
 		}
 		else if (userChoice == "fajita" || userChoice == "Fajita")
 		{
 			std::cout << "How many fajitas would you like?" << std::endl;
 			std::cin >> faijtaNumber;
-			total = faijta;
+			total = faijta*faijtaNumber;
 		}
 		std::cout << "Would you like to order anything else? Yes or No" << std::endl;
 		std::cin >> again;
