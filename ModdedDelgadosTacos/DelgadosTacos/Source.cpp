@@ -18,7 +18,7 @@ void printMenu()
 	std::cout << "Potatos Oles                  1.99" << std::endl;
 	std::cout << "Quesadilla                    1.00" << std::endl;
 	std::cout << "Faijta                        3.00" << std::endl;
-	std::cout << "**********************************"
+	std::cout << "**********************************" << std::endl;
 }
 
 int main()
@@ -108,6 +108,7 @@ int main()
 			std::cin >> faijtaNumber;
 		}
 	}
+	
 		
 		
 	
