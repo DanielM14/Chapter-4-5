@@ -51,9 +51,8 @@ int main()
 	double faijta = 3.00;
 	double taxRate = 0.7;
 	double tacosNumber = 0, burritoNumber = 0, enchiladasNumber = 0, tostadasNumber = 0 , drinkNumber = 0, churroNumber = 0, sumpremeBurrtioNumber = 0, potatoOlesNumber = 0, quesadillaNumber = 0, faijtaNumber = 0;
-	double total;
-	std::string userChoice, again;
-	
+	double total, again;
+	std::string userChoice;
 	tacoTruck();
 	printMenu();
 	do{
@@ -120,16 +119,12 @@ int main()
 			std::cin >> faijtaNumber;
 			total = faijta*faijtaNumber;
 		}
-		std::cout << "Would you like to order anything else? Yes or No" << std::endl;
+		std::cout << "Would you like to order anything else? 1 for No or 2 for Yes" << std::endl;
 		std::cin >> again;
-	} while (again != "No");
+	} while (again == 2);
 	
-	std::cout << "Your total is " << total << " thank you come again." << std::endl;
+		std::cout << "Your total is " << total << " thank you come again." << std::endl;
 
 	system("pause");
 	return 0;
-		
-	
-
-		
 }
