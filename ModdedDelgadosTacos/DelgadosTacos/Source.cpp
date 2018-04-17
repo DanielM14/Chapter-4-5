@@ -113,7 +113,7 @@ int main()
 			std::cin >> quesadillaNumber;
 			total = quesadilla*quesadillaNumber;
 		}
-		else if (userChoice == "fajita" || userChoice == "Fajita")
+		else if (userChoice == "faijta" || userChoice == "Faijta")
 		{
 			std::cout << "How many fajitas would you like?" << std::endl;
 			std::cin >> faijtaNumber;
