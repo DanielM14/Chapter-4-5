@@ -1,4 +1,4 @@
-// Program: Dice Game
+﻿// Program: Dice Game
 // Date: 4-16-2018
 // Auther: Daniel McGlasson
 
